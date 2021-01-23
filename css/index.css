@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* font-family: 'Nanum Gothic', sans-serif; */
+
+.row {max-width: 1200px; margin:0 auto; padding:0 20px }
+
+
+
+
+
+#header .white { position: fixed; min-width: 100%; z-index: 99; top: 0; left: 0; right: 0;
+    padding-top: 20px; border-bottom: 1px solid #999;
+    background-color: #fff;}
+#header h1 {  float: left; width: 20%; margin-left: 40px;}
+#header #nav { float: right; width: 70%; text-align: center;
+    font-size:18px; color:#1e1e1e; }
+#header #nav .depth1 > li { float:left; position:relative; width: 20%;}
+#header #nav .depth1 > li:hover .depth2{ opacity: 1;}
+#header #nav .depth1 > li > a { padding:25px; display:inline-block; 
+    font-size: 17px; font-weight: bold;}
+
+#header #nav  .depth2 {  position: absolute; top: 100%; left: 50%;
+    transform: translateX(-50%); font-size: 12px; background: #fff; width: 200px;
+    opacity: 0; transition: all 0.4s;}
+#header #nav  .depth2 li { padding: 12px 0; transition: all 0.4s;}
+#header #nav  .depth2 li:hover { color: #fff; background: #397dda;}
+
+
+
+#section .article1 { height: 750px; min-width: 100%; margin-top: 65px;}
+#section .article1 .slide1 { height: 750px; background: url(../img/main01.jpg) no-repeat center;
+background-size: cover; position: relative;}
+#section .article1 .slide2 { height: 750px; background: url(../img/main02.jpg) no-repeat center;
+background-size: cover; position: relative; display: none;}
+#section .article1 .slide3 { height: 750px; background: url(../img/main03.jpg) no-repeat center;
+background-size: cover; position: relative;display: none;}
+#section .article1 .slide4 { height: 750px; background: url(../img/main04.jpg) no-repeat center;
+background-size: cover; position: relative;display: none;}
+
+#section .article1 .slidetxt { position: absolute; top: 50%; left: 50%; 
+    transform: translate(-50%,-50%); color: #fff; text-align: center;}
+#section .article1 .slidetxt h2 { font-size: 45px;  margin-bottom: 20px; font-weight: bold;}
+#section .article1 .slidetxt p { font-size: 16px; line-height: 1.5; 
+    font-family: 'Nanum Gothic', sans-serif;}
+
+
+#section .article2, #section .article3 > div { max-width: 1000px; margin:0 auto; height: 650px; color: #555;}  
+#section .article2 > div:first-child { text-align: center; padding: 70px 0;} 
+#section .article2 > div:first-child h3 { font-size: 35px; font-weight: bold; margin-bottom: 20px;
+position: relative;}
+#section .article2 > div:first-child h3::after { content: ''; width: 100px; height: 1px;
+    background: blue; position: absolute; top: -10px; left: 50%; margin-left: -50px;
+   }
+#section .article2 > div:first-child p { line-height: 1.5;}
+
+#section .article2 li { float: left; width: 25%; padding: 0 20px; text-align: center;}
+
+#section .article2 ul li > div { width: 170px; height: 170px; border-radius: 50%; 
+    background: #555;
+    /* background-repeat: no-repeat; background-position:center; background-size: cover; */
+    text-align: center; display: block; margin: auto ; transition: all 0.6s;}
+#section .article2 ul li > div:hover { background: red; }
+
+#section .article2 .img1 { background-image: url(../img/works01.png) !important; }
+#section .article2 .img2 { background-image: url(../img/works02.png) !important; }
+#section .article2 .img3 {background-image: url(../img/works03.png) !important;}
+#section .article2 .img4 {background-image: url(../img/works04.png) !important;}
+
+#section .article2 ul li h4 { color: #424242; font-weight: bold; font-size: 17px; padding-top: 35px;}
+#section .article2 ul li p { color: #777; font-size: 13px; letter-spacing: -1.5px;
+    line-height: 1.5; padding: 18px 0 22px;}
+#section .article2 ul li a { color: #1e1e1e; font-size: 12px; padding: 10px 42px;
+    border: 1px solid #1e1e1e; display: inline-block;}
+
+
+#section .article3 {  background: url(../img/bg_business.jpg) no-repeat center;
+    text-align: center;}
+#section .article3 > div { color: #fff;}
+#section .article3 > div p:nth-child(1) { font-size: 35px; font-weight: 600; line-height: 50px;
+    position: relative; padding-top: 50px;}
+#section .article3 > div > p:nth-child(1)::after { content: ''; width: 100px; height: 1px;
+    position: absolute; top: 50px; left: 50%; margin-left: -50px; background: #fff;}
+#section .article3 > div > p:nth-child(2) { font-size: 15px; line-height: 22px; 
+    padding: 19px 0 70px;}
+
+#section .article3 ul li { float: left; width: 30%; margin-right: 5%;
+     background: #397dda; }
+#section .article3 ul li:nth-child(3) { margin-right: 0; }
+#section .article3 h4 { font-size: 14px; font-weight: bold; }
+#section .article3 ul li .bgr { position: relative; overflow: hidden;}
+#section .article3 p { font-size: 13px; line-height: 1.5; padding: 20px 0 0;}
+
+#section .article3 ul li .bgr a::before { content: ''; position: absolute; 
+    top: 0; right: 0; bottom: 0; left: 0; background:rgba(0,0,0,0.5);
+    opacity:0; transition:all 0.4s; z-index: 99;}
+#section .article3 ul li .bgr a:hover::before { opacity: 1; }
+
+
+
+#section .article3 ul li .com {  padding: 30px;}
+#section .article3 ul li .imgtxt { position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%); opacity: 0; z-index: 100;}
+#section .article3 ul li .bgr a:hover .imgtxt { opacity: 1; }
+
+#section .article3 ul li .bgr a:hover img {  transform:scale(1.2); transition: all 0.4s;}
+
+
+
+
+
+
+
+#section .article4 { text-align: center; padding-top: 70px; color: #555;}
+#section .article4 > div:nth-child(1) h3 { font-size: 35px; font-weight: bold; margin-bottom: 15px;
+        position: relative;}
+#section .article4 > div:nth-child(1) h3::after { content: ''; width: 100px; height: 1px;
+         background: blue; position: absolute; top: -10px; left: 50%; margin-left: -50px;
+        }
+#section .article4 > div p { color: #777777; font-size: 15px; line-height: 22px;
+    padding-top: 19px; margin-bottom: 50px;}
+
+#section .map { height: 300px;}
+
+#footer { text-align: center; position: relative; width: 100%; padding: 20px 0 10px 0;
+    background: #303030; color: #fff;}
+
+#footer div a { font-size: 13px; color: #cccccc; font-weight: bold; margin: 0 8px 15px;}
+#footer p {font-size: 12px; color: #8d8b8b; line-height: 1.5;}
+#footer p:nth-child(2) { margin: 14px 0;}
